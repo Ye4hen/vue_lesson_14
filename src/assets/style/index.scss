@@ -1,0 +1,307 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	font-size: 1rem;
+	color: #000;
+	background: #fff;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+a,
+button,
+svg {
+	cursor: pointer;
+}
+
+input,
+select {
+	border: 1px solid #000;
+}
+
+/*===========================================================================================*/
+
+
+.header__nav{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+[class*=__container] {
+	max-width: 76.875rem;
+	margin: 0 auto;
+	padding: 0 0.9375rem;
+}
+
+.cards__list{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.baba-galya{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.card {
+	display:grid;
+	gap: 15px;
+	&__image {
+		img{
+			width: 150px;
+		}
+	}
+
+	&__name {}
+
+	&__middle {
+		img{
+			width: 50px;
+		}
+		&-icons{
+			display: flex;
+			gap: 10px;
+			align-items: center;
+		}
+	}
+
+	&__button {}
+}
+
+.footer-span{
+	color: green;
+}
+
+/*===========================================================================================*/
+
+.second-footer {
+	padding-top: 100px;
+	&__container {
+		display: grid;
+		gap: 50px;
+		justify-content: center;
+	}
+
+	&__gallery {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	&__gallery-img {
+		img{
+			height: 200px;
+			width: 200px;
+		}
+	}
+	
+}
+
+.contacts {
+
+	&__body {}
+}
+
+.body-contacts {
+
+	&__title {}
+
+	&__list {
+		padding-top: 30px;
+		display: grid;
+		justify-content: center;
+		gap: 15px;
+	}
+
+	&__item {
+		text-align: left;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+
+.edit-card {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+	max-width: 500px;
+	justify-self: start;
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	&__image {
+		img{
+			width: 100px;
+			height: 100px;
+			border-radius: 24px;
+		}
+	}
+
+	&__title {}
+
+	&__price {}
+
+	&__action {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__button {
+		padding: 5px 10px;
+		color: #fff;
+		background-color: #000;
+		border: 1px solid #000;
+		transition: all 0.3s;
+		@media(any-hover:hover){
+			&:hover{
+				color: #000;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.products__list{
+	display: grid;
+	gap: 30px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.editor {
+	padding-top: 50px;
+	display: grid;
+	justify-content: center;
+	gap: 30px;
+	&__item {
+		justify-self: start;
+		label{
+			text-align: left;
+			display: grid;
+			justify-content: center;
+		}
+	}
+
+	&__image {
+		img{
+			width: 150px;
+			border-radius: 24px;
+		}
+	}
+
+	&__action {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__button {
+		padding: 5px 10px;
+		color: #fff;
+		background-color: #000;
+		border: 1px solid #000;
+		transition: all 0.3s;
+		@media(any-hover:hover){
+			&:hover{
+				color: #000;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.err-msg {
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: 700;
+	color: red;
+}
+
+.products__nav{
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	color: #000;
+}
+
+/*===========================================================================================*/
+
+.selectors {
+	padding: 50px 0;
+	&__items {
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	&__item {}
+}
+
+.selected {
+
+	&__list {
+		display: grid;
+		gap: 15px;
+		justify-content: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+	}
+
+	&__item-name {}
+}
+
+.selector__container{
+	display: grid;
+	gap: 30px;
+}
